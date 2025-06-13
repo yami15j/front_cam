@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background: linear-gradient(#134C61, #19627D, #7BA7B7, #000000);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #000;
+}
+
+.container {
+  background-color: #ffffff10;
+  border-radius: 10px;
+  width: 360px;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+  display: block;
+}
+
+.brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+label {
+  display: block;
+  text-align: left;
+  margin: 0.5rem 0 0.2rem;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 20px;
+  border: 1px solid #444;
+  outline: none;
+  margin-bottom: 1rem;
+  background-color: #e8e8e8;
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.forgot {
+  font-size: 0.9rem;
+  text-align: left;
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+button {
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 25px;
+  background-color: #a2d7cd;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+}
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: linear-gradient(#134C61, #19627D, #7BA7B7, #000000);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-box {
+  padding: 2rem;
+  width: 320px;
+  text-align: center;
+}
+
+.logo {
+  width: 140px;     /* aumenta el ancho */
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  text-align: left;
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 20px;
+  border: none;
+  margin-bottom: 0.5rem;
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 90px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  left:225px;
+  float: left;
+  width: 115px; 
+}
+
+ .forgot-password {
+  display: block;
+  font-size: 0.85rem;
+  color: #000000;
+  margin-bottom: 1.5rem;
+  text-decoration: none;
+  text-align: left;
+}
+
+button.inicio {
+  padding: 0.6rem 1.5rem;
+  border: none;
+  width: 250px;
+  border-radius: 75px;
+  background-color: #a2d7cd;
+  font-weight: bold;
+  cursor: pointer;
+}

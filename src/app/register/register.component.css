@@ -1,0 +1,70 @@
+body, html {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to bottom, #004e6d, #89b4c4, #1f1f1f);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.container {
+  text-align: center;
+  background: linear-gradient(to bottom, #004e6d, #89b4c4, #1f1f1f);
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 360px;
+  margin: 80px auto;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+ 
+
+}
+
+.logo {
+  width: 90px;
+  margin-bottom: 12px;
+}
+
+.title {
+  color: #fff;
+  margin-bottom: 24px;
+  font-size: 24px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  
+  
+}
+
+label {
+  text-align: left;
+  color: #fff;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+input {
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  font-size: 14px;
+  outline: none;
+}
+
+button {
+  margin-top: 16px;
+  padding: 12px;
+  background-color: #b2f7ef;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #9fe8dd;
+}

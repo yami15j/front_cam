@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  background: linear-gradient(#2d3a4a, #6fa5c1);
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   background: linear-gradient(#2d3a4a, #6fa5c1);
+    padding: 10px;
+    color: white;
+}
+
+.menu-icon, .user-icon {
+    font-size: 24px;
+}
+
+.user-info {
+    text-align: right;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.back-button {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+h1 {
+    background-color: #a8e6cf;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.hours-list {
+    list-style: none;
+    padding: 0;
+}
+
+.hours-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.total-hours {
+    background-color: #a8e6cf;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+  background: linear-gradient(#2d3a4a, #6fa5c1);
+    padding: 10px;
+}
+
+.footer-icon {
+    font-size: 24px;
+    color: white;
+}

@@ -1,0 +1,139 @@
+
+body {
+  background: #5fa2c7;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.profile-card {
+  display: flex;
+  align-items: center;
+  background: #b2d6ee;
+  border-radius: 40px 40px 40px 0;
+  padding: 18px 28px;
+  margin: 24px auto 18px auto;
+  width: 90%;
+  max-width: 420px;
+  box-shadow: 0 2px 8px #0001;
+}
+
+.profile-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 18px;
+  border: 3px solid #fff;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.profile-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #23405a;
+}
+
+.profile-id,
+.profile-role {
+  font-size: 1rem;
+  color: #23405a;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: #e2eaf2;
+  border-radius: 20px;
+  padding: 8px 16px;
+  width: 90%;
+  max-width: 420px;
+  margin: 0 auto 18px auto;
+}
+
+.search-icon {
+  font-size: 1.2rem;
+  margin-right: 8px;
+  color: #23405a;
+}
+
+.search-bar input {
+  border: none;
+  background: transparent;
+  font-size: 1rem;
+  outline: none;
+  width: 100%;
+}
+
+.generate-btn {
+  display: block;
+  margin: 18px auto;
+  background: #f7931e;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  padding: 14px 38px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px #0002;
+  transition: background 0.2s;
+}
+
+.generate-btn:hover {
+  background: #e67c0e;
+}
+
+.qr-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 28px 0;
+}
+
+.qr-img {
+  width: 260px;
+  height: 260px;
+  background: #fff;
+  border-radius: 24px;
+  padding: 18px;
+  box-shadow: 0 2px 12px #0002;
+}
+
+.footer-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #2d3a4a;
+  border-radius: 30px 30px 0 0;
+  padding: 18px 0;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.footer-icon {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  transition: color 0.2s;
+}
+
+.footer-icon:hover {
+  color: #f7931e;
+}
+
+.timer-container {
+  text-align: center;
+}
+
+#timer {
+  font-size: 1rem;
+}
