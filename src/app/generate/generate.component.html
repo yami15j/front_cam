@@ -1,0 +1,25 @@
+<!-- Puedes usar este código en home.component.html -->
+<div class="profile-card">
+  <img class="profile-img" src="/imagenes/images.png" alt="Foto de perfil">
+  <div class="profile-info">
+    <div class="profile-name">Alex Johnson</div>
+    <div class="profile-id">ID: 123456</div>
+    <div class="profile-role">Marketing Manager</div>
+  </div>
+</div>
+
+<div class="search-bar" (click)="habilitarBusqueda()">
+  <span class="search-icon">🔍</span>
+  <input id="inputBusqueda" type="text" placeholder="Buscar..." disabled />
+</div>
+
+<!-- Contenido principal -->
+<div class="content">
+  <button class="generate-btn" routerLink="/home">Generar QR</button>
+</div>
+
+<footer class="footer-bar">
+  <button class="footer-icon">
+    <span class="icon-back">&#8592;</span>
+  </button>
+</footer>

@@ -1,0 +1,48 @@
+<!-- Perfil -->
+<!-- En el <head> del archivo index.html -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+<div class="profile-card">
+  <img class="profile-img" src="/imagenes/images.png" alt="Foto de perfil" />
+  <div class="profile-info">
+    <div class="profile-name">Alex Johnson</div>
+    <div class="profile-id">ID: 123456</div>
+    <div class="profile-role">Marketing Manager</div>
+  </div>
+</div>
+
+<!-- Barra de búsqueda -->
+<div class="search-bar">
+  <span class="search-icon">🔍</span>
+  <input type="text" placeholder="Buscar..." disabled />
+</div>
+
+<!-- Botón QR -->
+<button class="generate-btn">Generar QR</button>
+
+<!-- Temporizador visual -->
+<div class="timer-wrapper">
+  <div class="timer-label">
+    <i class="fas fa-clock"></i>
+    Tiempo restante: <span>{{ tiempoRestante }}</span>
+  </div>
+
+  <div class="progress-bar">
+    <div class="progress-fill" [style.width.%]="porcentajeRestante"></div>
+  </div> 
+    
+<div *ngIf="codigoValido" class="valid-msg">
+  ✅ Código válido. Redirigiendo...
+</div>
+
+<!-- Footer -->
+<footer class="footer-bar" routerLink="/generate">
+  <button class="footer-icon">
+    <span class="icon-back">&#8592;</span>
+  </button>
+</footer>
+
+

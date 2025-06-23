@@ -1,6 +1,10 @@
+<!-- Escáner QR -->
+<zxing-scanner *ngIf="false" (scanSuccess)="onCodeScanned($event)" class="qr-scanner"></zxing-scanner>
 
+
+<!-- Tarjeta de perfil -->
 <div class="profile-card">
-  <img class="profile-img" src="/imagenes/images.png" alt="Foto de perfil">
+  <img class="profile-img" src="/imagenes/images.png" alt="Foto de perfil" />
   <div class="profile-info">
     <div class="profile-name">Alex Johnson</div>
     <div class="profile-id">ID: 123456</div>
@@ -8,23 +12,50 @@
   </div>
 </div>
 
+<!-- Barra de búsqueda -->
 <div class="search-bar">
   <span class="search-icon">🔍</span>
-  <input type="text" placeholder="Buscar..." disabled>
-</div>
+ 
+  <input
+  type="text"
+  placeholder="Buscar..." [disabled]="busquedaDeshabilitada" (click)="habilitarBusqueda()" />
 
+<!-- Botón QR -->
 <button class="generate-btn">Generar QR</button>
 
+<!-- Temporizador visual -->
+<div class="timer-wrapper">
+  <div class="timer-label">
+    <i class="fas fa-clock"></i>
+    Tiempo restante: <span>{{ tiempoRestante }}</span>
+  </div>
+
+<div class="progress-bar">
+  <div
+    class="progress-fill"
+    [ngClass]="{'halfway': porcentajeRestante <= 50}"
+    [style.width.%]="porcentajeRestante">
+  </div>
+</div>
 <div class="qr-container">
-  <img class="qr-img" src="/imagenes/qr.png" alt="QR">
+  <div class="qr-wrapper" *ngIf="tiempoRestante > 0; else codigoInvalido">
+    <img class="qr-img" src="/imagenes/qr.png" alt="QR" />
+  </div>
+
+   
+
+    <ng-template #codigoInvalido>
+      <div class="qr-wrapper invalid">
+        <img class="qr-img" src="/imagenes/qr.png" alt="QR" />
+        <div class="error-msg-overlay">⚠️ Código inválido</div>
+      </div>
+    </ng-template>
+  </div>
 </div>
 
-<div class="timer-container">
-  <h1 id="timer">{{ tiempoRestante }}</h1>
-</div>
-
+<!-- Footer -->
 <footer class="footer-bar">
-  <button class="footer-icon" routerLink="/home"><span class="icon-home">🏠</span></button>
-  <button class="footer-icon" routerLink="/horas"><span class="icon-clock">⏳</span></button>
-  <button class="footer-icon" routerLink="/finanzas"><span class="icon-money">💲</span></button>
+  <button class="footer-icon" routerLink="/generate">
+    <span class="icon-back">&#8592;</span>
+  </button>
 </footer>

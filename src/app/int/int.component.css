@@ -1,6 +1,8 @@
 .body {
 border-color: linear-gradient(#2d3a4a, #6fa5c1, #000000 ) ;
 }
+
+
 .login-container {
   display: flex;
   flex-direction: column;
@@ -8,13 +10,12 @@ border-color: linear-gradient(#2d3a4a, #6fa5c1, #000000 ) ;
   justify-content: center;
   height: 100vh;
   background: linear-gradient(#134C61, #19627D, #7BA7B7, #000000);
-  ;
 }
 
 
 .logo-section img {
   width: 150px;
-  margin-top: -100px;
+  margin-top: 70px;
 }
 
 .login-form {
@@ -34,6 +35,8 @@ border-color: linear-gradient(#2d3a4a, #6fa5c1, #000000 ) ;
   border-radius: 20px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .login-button:hover {
@@ -42,35 +45,59 @@ border-color: linear-gradient(#2d3a4a, #6fa5c1, #000000 ) ;
 
 .divider {
   color: #ccc;
-  margin-bottom: 10px;
+  margin-bottom: 70px;
   position: relative;
+  top: 80px;
 }
 
-.divider::before,
+.divider::before {
+  content: "";
+  height: 1px;
+  background: #ccc;
+  position: absolute;
+  top: 50%;
+  width: 50%;
+  flex: 1;
+  right: 150px;
+}
 .divider::after {
   content: "";
   height: 1px;
   background: #ccc;
   position: absolute;
   top: 50%;
-  width: 40%;
-  float: left;
-  float: right;
-  
-}
+  width: 50%;
+  flex: 1;
+  left: 150px;
+
+  }
 
 .google-button {
   background: none;
   border: none;
   cursor: pointer;
+  margin:  25px 5px;
+  margin-bottom: -90px;
 }
 
 .google-btn img {
   width: 40px;
   height: 40px;
+  top: 50px;
 }
-.register{
-   display: flex;
-  flex-direction: column;
-  gap: 20px;
+
+.Register {
+  background-color: #cce7f0;
+  color: #000;
+  padding: 10px 57px;
+  border: none;
+  border-radius: 100px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 5px;  /* Ajusta según distancia entre botones */
+  transition: background-color 0.3s ease;
+}
+
+.Register:hover {
+  background-color: #b3d7e6;
 }

@@ -7,6 +7,7 @@ import { FinanzasComponent } from './finanzas/finanzas.component';
 import { HorasComponent } from './horas/horas.component';
 import { MenuComponent } from './menu/menu.component';
 import { RegisterComponent } from './register/register.component';
+import { GenerateComponent } from './generate/generate.component';
 
 
 export const routes: Routes = [
@@ -17,5 +18,6 @@ export const routes: Routes = [
     { path: "finanzas", component: FinanzasComponent },
     { path: "horas", component: HorasComponent },
     { path: "menu", component: MenuComponent },
-    {path:"registro", component:RegisterComponent}
+    {path:"registro", component:RegisterComponent},
+    {path:"generate", component: GenerateComponent}
 ];

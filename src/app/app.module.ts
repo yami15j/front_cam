@@ -7,6 +7,7 @@ import { LoginComponent } from './login/login.component';
 import { IntComponent } from './int/int.component';
 import { HomeComponent } from './home/home.component';   
 import { routes } from './app.routes'; 
+import { GenerateComponent } from './generate/generate.component';
 
 @NgModule({
   imports: [
@@ -20,7 +21,8 @@ import { routes } from './app.routes';
     AppComponent,
     LoginComponent,
     IntComponent,
-    HomeComponent
+    HomeComponent,
+    GenerateComponent,
   ],
    imports: [
     BrowserModule,
