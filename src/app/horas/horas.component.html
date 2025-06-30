@@ -1,33 +1,36 @@
 <body>
-<div class="container">
+  <div class="container">
     <header>
-        <div class="menu-icon" routerLink="/menu">☰</div>
-        <div class="user-icon">👤</div>
-        <div class="user-info">
-            <p>Nombre: xxxxxxxx</p>
-            <p>ID: xxxxxxxx</p>
+      <div class="menu-icon" routerLink="/menu" title="Menú">☰</div>
+      <div class="user-info">
+        <div class="user-icon" title="Perfil">👤</div>
+        <div class="user-details">
+          <p>Nombre: <strong>xxxxxxx</strong></p>
+          <p>ID: <strong>xxxxxxx</strong></p>
         </div>
+      </div>
     </header>
+
     <main>
-        <div class="back-button" routerLink="/home">←</div>
-        <h1>HORAS TRABAJADAS</h1>
-        <ul class="hours-list">
-            <li>Lunes <span>8</span></li>
-            <li>Martes <span>8</span></li>
-            <li>Miércoles <span>8</span></li>
-            <li>Jueves <span>8</span></li>
-            <li>Viernes <span>8</span></li>
-        </ul>
-        <div class="total-hours">
-            <p>Horas Trabajadas</p>
-            <p>40</p>
-        </div>
+      <div class="back-button" routerLink="/home" title="Volver">← Volver</div>
+      <h1>HORAS TRABAJADAS</h1>
+      <ul class="hours-list">
+        <li><span>Lunes</span> <span>8</span></li>
+        <li><span>Martes</span> <span>8</span></li>
+        <li><span>Miércoles</span> <span>8</span></li>
+        <li><span>Jueves</span> <span>8</span></li>
+        <li><span>Viernes</span> <span>8</span></li>
+      </ul>
+      <div class="total-hours">
+        <p>Total Horas Trabajadas</p>
+        <p><strong>40</strong></p>
+      </div>
     </main>
+
     <footer>
-        <div class="footer-icon" routerLink="/horas">⏳</div>
-        <div class="footer-icon" routerLink="/home">🏠</div>
-        <div class="footer-icon" routerLink="/Finanzas">💰</div>
+      <div class="footer-icon" routerLink="/horas" title="Horas">⏳</div>
+      <div class="footer-icon" routerLink="/home" title="Inicio">🏠</div>
+      <div class="footer-icon" routerLink="/Finanzas" title="Finanzas">💰</div>
     </footer>
-</div>
-<body>
-    
+  </div>
+</body>

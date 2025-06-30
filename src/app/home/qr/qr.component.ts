@@ -3,9 +3,10 @@ import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-qr',
-  imports: [RouterLink],
   templateUrl: './qr.component.html',
-  styleUrl: './qr.component.css'
+  styleUrls: ['./qr.component.css'], // CORRECCIÓN: es "styleUrls" plural
+  standalone: true,                   // Si quieres usar imports debes activar standalone
+  imports: [RouterLink]               // Solo si usas standalone
 })
 export class QRComponent implements OnInit, OnDestroy {
   tiempoRestante: number = 30;

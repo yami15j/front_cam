@@ -101,11 +101,13 @@ body {
 
 .footer-bar {
   display: flex;
+  bottom: 0;
   justify-content: center; /* Centra el botón */
   background-color: #23405a;
   padding: 8px 0;
   border-radius: 40px 40px 0 0;
-  margin-top: 265px; /* Para que se superponga ligeramente al contenido */
+  width: 100%;
+  margin-top: 300px; /* Para que se superponga ligeramente al contenido */
 }
 
 .footer-icon {
