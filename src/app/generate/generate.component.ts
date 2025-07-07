@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-generate',
   standalone: true,
@@ -9,6 +9,7 @@ import { RouterLink } from '@angular/router';
   styleUrls: ['./generate.component.css']
 })
 export class GenerateComponent {
+  constructor(private router: Router) {}
   habilitarBusqueda() {
     const input = document.getElementById('inputBusqueda') as HTMLInputElement;
     if (input) {
@@ -16,4 +17,9 @@ export class GenerateComponent {
       input.focus();
     }
   }
+
+  volverAtras() {
+    this.router.navigate(['/int']);
+  }
+
 }

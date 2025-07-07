@@ -11,6 +11,7 @@ import { GenerateComponent } from './generate/generate.component';
 
 export const routes: Routes = [
     { path: "", component: IntComponent },
+    { path: "int", component: IntComponent },
     { path: "login", component: LoginComponent },
     { path: "home", component: HomeComponent },
     { path: "qr", component: QRComponent },
